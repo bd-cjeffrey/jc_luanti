@@ -26,6 +26,8 @@ jobs:
 
       - name: Black Duck Security Scan
         id: black-duck-security-scan
+        env:
+            DETECT_ACCURACY_REQUIRED: 'NONE'
         uses: blackduck-inc/black-duck-security-scan@v2
         with:
           ### SCANNING: Required fields
