@@ -28,6 +28,7 @@ jobs:
         id: black-duck-security-scan
         env:
             DETECT_ACCURACY_REQUIRED: 'NONE'
+            DETECT_TOOLS: 'DETECTOR'
         uses: blackduck-inc/black-duck-security-scan@v2
         with:
           ### SCANNING: Required fields
